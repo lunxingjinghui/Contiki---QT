@@ -42,6 +42,8 @@
 
 #include "sys/process.h"
 
+#define AUTOSTART_ENABLE        1
+
 #if ! CC_NO_VA_ARGS
 #if AUTOSTART_ENABLE
 #define AUTOSTART_PROCESSES(...)					\

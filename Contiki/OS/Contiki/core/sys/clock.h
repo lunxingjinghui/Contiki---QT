@@ -82,6 +82,8 @@
 #define CLOCK_SECOND (clock_time_t)32
 #endif
 
+void SysTickUpdate(clock_time_t ms);
+
 /**
  * Initialize the clock library.
  *
@@ -89,7 +91,7 @@
  * from the main() function of the system.
  *
  */
-void clock_init(void);
+void clock_init(clock_time_t ms);
 
 /**
  * Get the current clock time.
